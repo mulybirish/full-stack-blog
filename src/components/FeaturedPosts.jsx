@@ -4,11 +4,15 @@ import Image from "./Image";
 
 function FeaturedPosts() {
   return (
-    <div className="mt-8 flex flex-col lg:flex-row gap-8">
+    <div className="mt-8 flex flex-col lg:flex-row gap-8 bg-white/30 backdrop-blur-lg p-4 rounded-3xl">
       {/* first post /biggest post*/}
-      <div className="w-full lg:w-1/2 flex flex-col gap-4">
+      <div className="w-full lg:w-1/2 flex flex-col gap-4 ">
         {/* image */}
-        <Image src="featured1.jpeg" className="rounded-3xl object-cover" />
+        <Image
+          src="featured1.jpeg"
+          className="rounded-3xl object-cover"
+          w="895"
+        />
         {/* details  */}
         <div className="flex items-center gap-4">
           <h1 className="font-semibold lg:text-lg">01.</h1>
@@ -26,11 +30,14 @@ function FeaturedPosts() {
       {/* other posts */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
         {/* second  */}
-        <div className="lg:h-1/3 flex justify-between gap-4 bg-white/30 backdrop-blur-sm rounded-3xl">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="lg:h-1/3 flex justify-between gap-4">
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured2.jpeg"
+              className="rounded-3xl object-cover w-full h-full"
+              w="298"
+            />
+          </div>
           {/* details and title  */}
           <div className="w-2/3 ">
             {/* detatils  */}
@@ -50,12 +57,16 @@ function FeaturedPosts() {
             </div>
           </div>
         </div>
+
         {/* third  */}
-        <div className="lg:h-1/3 flex justify-between gap-4 bg-white/30 backdrop-blur-sm rounded-3xl">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="lg:h-1/3 flex justify-between gap-4 rounded-3xl">
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured3.jpeg"
+              className="rounded-3xl object-cover w-full h-full"
+              w="298"
+            />
+          </div>
           {/* details and title  */}
           <div className="w-2/3 ">
             {/* detatils  */}
@@ -76,11 +87,14 @@ function FeaturedPosts() {
           </div>
         </div>
         {/* forth  */}
-        <div className="lg:h-1/3 flex justify-between gap-4 bg-white/30 backdrop-blur-sm rounded-3xl">
-          <Image
-            src="featured2.jpeg"
-            className="rounded-3xl object-cover w-1/3 aspect-video"
-          />
+        <div className="lg:h-1/3 flex justify-between gap-4  rounded-3xl">
+          <div className="w-1/3 aspect-video">
+            <Image
+              src="featured4.jpeg"
+              className="rounded-3xl object-cover w-full h-full"
+              w="298"
+            />
+          </div>
           {/* details and title  */}
           <div className="w-2/3 ">
             {/* detatils  */}
