@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FeaturedPosts from "../components/FeaturedPosts";
 import MainCategories from "../components/MainCategories";
 
 function HomePage() {
@@ -50,6 +51,7 @@ function HomePage() {
       {/* MainCategories*/}
       <MainCategories />
       {/* FeaturedPost*/}
+      <FeaturedPosts />
       {/* PostList*/}
     </div>
   );
