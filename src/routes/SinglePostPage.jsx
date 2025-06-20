@@ -141,9 +141,9 @@ function SinglePostPage() {
             <Link className="underline" to="/">
               Search Engines
             </Link>
-            <Link className="underline" to="/">
+            {/* <Link className="underline" to="/">
               Music of the day
-            </Link>
+            </Link> */}
           </div>
           <h1 className="mt-8 mb-4 text-sm font-medium">Search</h1>
           <Search />
